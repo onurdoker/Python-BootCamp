@@ -230,3 +230,75 @@
 #         print('It is not Python BootCamp day')
 #     case _:
 #         print('Invalid day')
+
+# ! Eighteenth Example
+# name = 'RidvanCelikbas'
+# length = len(name)
+# print(length)
+# print(name[0])  # first letter
+# print(name[13])  # last letter
+# print(name[-1])  # last letter
+# print(name[1:4])  # 1 to 4
+# print(name[:6])  # 0 to 6
+# print(name[:6:1])  # 0 to 6 step 1
+# print(name[:6:2])  # 0 to 6 step 2
+# print(name[-10:-3])  # -10 to -3
+# print(name[5::2])  # 5 to end step 2
+# print(name[::-1])  # reverse
+#
+# print('R' in name)  # is 'R' in name? => True
+# print('r' in name)  # is 'r' in name? => False (case-sensitive)
+#
+# print(name.upper())  # to upper case
+# print(name.lower())  # to lower case
+#
+# print(name.isalnum())  # is name alphanumeric?
+# print(name.isdigit())  # is name digit?
+
+# ! Nineteenth Example
+# name1 = 'Gamze'
+# name2 = 'Omer'
+# name3 = 'Yasin'
+
+# print(name1 + name2 + name3)
+# print(f'{name1} {name2} {name3}')
+
+# text = "Hi Dear {} \nWelcome to Python Bootcamp Program"
+# print(text.format(name1))
+# print(text.format(name2))
+# print(text.format(name3))
+
+# text2 = 'The first, the second and the third place winners of our competition are {}, {} and {}.'
+# print(text2.format(name1,
+#                    name2,
+#                    name3))
+# print(text2.format(name2,
+#                    name3,
+#                    name1))
+#
+# print(text2.count('a'))
+
+# ! Twentieth Example
+# print('Omer',
+#       'Yasin',
+#       'Gamze')  # default separator is space
+# print('Omer',
+#       'Yasin',
+#       'Gamze',
+#       sep=', ')  # separator is comma
+# print('Omer',
+#       'Yasin',
+#       'Gamze',
+#       sep=' / ')  # separator is slashed
+
+# ! Twenty-First Example
+import random
+
+random_number = random.randint(1,
+                               10)
+number = int(input('Enter the number you guessed: '))
+
+if number == random_number:
+    print(f'Congratulations! \nGuessed number is {random_number} ')
+else:
+    print('You did not guess the number \ntry again')
