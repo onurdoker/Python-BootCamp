@@ -105,12 +105,10 @@
 #     if number % power == 0:
 #         return number // power
 #
-#
 # print(power_control(10,
 #                     2))
 # print(power_control(10,
 #                     3))
-
 
 # ! Tenth Example
 # def greeting(name):
@@ -150,7 +148,7 @@
 #     return age
 #
 #
-# print('if you born at 1990, you are ',
+# print('if you were born at 1990, you are ',
 #       calculate_age(1990))
 
 # ! Thirteenth Example
@@ -163,51 +161,107 @@
 # print(calculate_circle_area(5))
 
 # ! Fourteenth Example
-# TODO CHECK CODE!!!!
+# * first method
 # def calculate_sum(a,
 #                   b):
 #     return a + b
-#
 #
 # def calculate_difference(a,
 #                          b):
 #     return a - b
 #
-#
 # def calculate_product(a,
 #                       b):
 #     return a * b
-#
 #
 # def calculate_quotient(a,
 #                        b):
 #     return a / b
 #
+# def calculation(a,
+#                 b,
+#                 process):
+#     if process == '+':
+#         return calculate_sum(a,
+#                              b)
+#     elif process == '-':
+#         return calculate_difference(a,
+#                                     b)
+#     elif process == '*':
+#         return calculate_product(a,
+#                                  b)
+#     elif process == '/':
+#         return calculate_quotient(a,
+#                                   b)
+#     else:
+#         return 'Invalid process'
+#
+# def main():
+#     process = input('Enter process (+,-,*,/): ')
+#     a = float(input('Enter a number: '))
+#     b = float(input('Enter a number: '))
+#     answer = calculation(a,
+#                          b,
+#                          process)
+#     print(f'{a} {process} {b} = {answer}')
+
+# main()
+
+# * second method
+# def calculate_sum(a,
+#                   b):
+#     return a + b
+#
+# def calculate_difference(a,
+#                          b):
+#     return a - b
+#
+# def calculate_product(a,
+#                       b):
+#     return a * b
+#
+# def calculate_quotient(a,
+#                        b):
+#     return a / b
 #
 # def calculation(a,
 #                 b,
 #                 process):
-#     process = input('Enter process (+,-,*,/): ')
+#     if process == '+':
+#         return calculate_sum(a,
+#                              b)
+#     elif process == '-':
+#         return calculate_difference(a,
+#                                     b)
+#     elif process == '*':
+#         return calculate_product(a,
+#                                  b)
+#     elif process == '/':
+#         return calculate_quotient(a,
+#                                   b)
+#     else:
+#         return 'Invalid process'
 #
-#     def numbers():
+# def main():
+#     process = input('Enter process (+,-,*,/): ')
+#     if not (process == '+' or process == '-' or process == '*' or process == '/'):
+#         return print('Invalid input')
+#
+#     def get_number():
 #         return float(input('Enter a number: '))
 #
-#     a = numbers()
-#     b = numbers()
-#     if process == '+':
-#         calculate_sum(a,
-#                       b)
-#     elif process == '-':
-#         calculate_difference(a,
-#                              b)
-#     elif process == '*':
-#         calculate_product(a,
-#                           b)
-#     elif process == '/':
-#         calculate_quotient(a,
-#                            b)
-#     else:
-#         print('Invalid process')
+#     a = get_number()
+#     b = get_number()
+#     answer = calculation(a,
+#                          b,
+#                          process)
+#     print(f'{a} {process} {b} = {answer}')
+#     return main()
+#
+# main()
+# if __name__ == '__main__':
+#     print('Welcome to Calculator Program!')
+#     main()
 
 # ! Fifteenth Example
 # def calculate_square(radius=1,
@@ -241,7 +295,6 @@
 #           total)
 #     return total
 #
-#
 # calculate_sum(5,
 #               10,
 #               15)
@@ -263,7 +316,6 @@
 #           total)
 #     return total
 #
-#
 # calculate_sum(5,
 #               10,
 #               15)
@@ -273,18 +325,15 @@
 #               20,
 #               25)
 
-
 # ! Nineteenth Example
-
 # def calculate_average(*args):
 #     total = 0
 #     for arg in args:
 #         total += arg
-#     average = total / len(args)
+#     average = total / len(args) if args else 0
 #     print('average: ',
 #           average)
 #     return average
-#
 #
 # calculate_average(5,
 #                   10,
@@ -303,9 +352,8 @@
 #     for key, value in kwargs.items():
 #         print(f'{key} : {value}')
 #
-#
 # student_knowledge(name='Onur',
-#                   surname='doker',
+#                   surname='Doker',
 #                   age=48,
 #                   department='Chemical Engineering',
 #                   attendance=True,
@@ -317,7 +365,6 @@
 #     for key, value in kwargs.items():
 #         item[key] = value
 #     return item
-#
 #
 # laptop = item_entry(name='Macbook Pro',
 #                     item_price=25000,
@@ -332,7 +379,6 @@
 #     print(kwargs,
 #           type(kwargs))
 #
-#
 # student_card('YOK cart',
 #              student_name='Onur',
 #              student_surname='Doker',
@@ -340,7 +386,6 @@
 
 # ! Twenty Third Example
 # * Lambda => anonymous function
-
 # calculate_square = lambda number: number * number
 # print(calculate_square(5))
 # print(calculate_square(8))
@@ -356,7 +401,7 @@
 # students = [('onur',
 #              30),
 #             ('ada',
-#              20),
+#              40),
 #             ('mert',
 #              25),
 #             ('fatima',
@@ -383,22 +428,31 @@
 # print(even_numbers)
 
 # ! Twenty Sixth Example
-
+# numbers = [1,
+#            2,
+#            3,
+#            4,
+#            5,
+#            6,
+#            7,
+#            8,
+#            9,
+#            10]
 # calculate_square = list(map(lambda x: x * 2,
 #                             numbers))
 # print(calculate_square)
 
 # ! Twenty Seventh Example
 # multiply_table = [[i * j for j in range(1,
-#                                         4)] for i in range(1,
-#                                                            4)]
+#                                         11)] for i in range(1,
+#                                                             11)]
 # print('Multiply Table: ')
 # for row in multiply_table:
 #     print(row)
 
 # ! Twenty Eighth Example
 # def control_password(password):
-#     if password < 8:
+#     if len(password) < 8:
 #         return 'Password has at least 8 characters'
 #     elif password.isnumeric():
 #         return 'Password has at least one letter'
@@ -413,14 +467,12 @@
 #     else:
 #         return 'Password is valid'
 #
-#
-# password = 'Python123'
+# password = "Python123!"
 # control_password(password)
 # print(control_password(password))
 
-
 # ! Twenty Ninth Example
-# Fibonacci Series
+# # * Fibonacci Series
 # def fibonacci_series(number):
 #     series = []
 #     a, b = 0, 1
@@ -428,7 +480,6 @@
 #         series.append(a)
 #         a, b = b, a + b
 #     return series
-#
 #
 # print(fibonacci_series(10))
 
@@ -439,12 +490,10 @@
 #     else:
 #         return number * factorial(number - 1)
 #
-#
 # print(factorial(15))
 
 # ! Thirty First Example
-# write reverse
-
+# # * write reverse
 # def reverse_string(string):
 #     if len(string) == 0:
 #         return string
@@ -452,10 +501,10 @@
 #         return string[-1] + reverse_string(string[0:len(string) - 1])
 #         # return string[-1] + reverse_string(string[:-1])
 #
-# print(reverse_string('merhaba'))
+# print(reverse_string('greetings'))
 
 # ! Thirty Second Example
-# find maximum number
+# * find maximum number
 # def find_max(*args):
 #     if len(args) == 0:
 #         return None
@@ -466,7 +515,6 @@
 #                 max_number = arg
 #     return max_number
 #
-#
 # print(find_max(1,
 #                2,
 #                6,
@@ -474,14 +522,12 @@
 #                5))
 
 # ! Thirty Third Example
-
 # def student_score_average(student):
 #     total = 0
 #     for score in student['scores']:
 #         total += score
 #     average_score = total / len(student['scores'])
 #     return average_score
-#
 #
 # student = {'name': 'Onur', "scores": [70,
 #                                       85,
@@ -491,17 +537,21 @@
 # print(f'{student['name']} \n{average}')
 
 # ! Thirty Fourth Example
+#  * method 1
+def key_value_changer(dict):
+    new_dict = {}
+    for key, value in dict.items():
+        new_dict[value] = key
+    return new_dict
 
-# TODO CHECK CODE!!!!
-# def value_changer(colors,
-#                   treng):
-#     for key, value in colors.items():
-#         colors[value] = treng[value]
-#     return colors
-#
-#
-# treng = {'red': 'kirmizi', 'green': 'yesil', 'blue': 'mavi'}
-# colors = {'red': '#FF0000', 'green': '#00FF00', 'blue': '#0000FF'}
-# result = value_changer(colors,
-#                        treng)
-# print(result)
+tr_eng = {'red': 'kırmızı', 'green': 'yeşil', 'blue': 'mavi'}
+result = key_value_changer(tr_eng)
+print(f'reverse of {tr_eng} is \n{result}')
+
+# * method 2
+def key_value_changer2(dict):
+    return {value: key for key, value in dict.items()}
+
+colors = {'red': '#FF0000', 'green': '#00FF00', 'blue': '#0000FF'}
+result2 = key_value_changer2(colors)
+print(f'reverse of {colors} is \n{result2}')
