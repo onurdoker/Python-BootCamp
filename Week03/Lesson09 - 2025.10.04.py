@@ -356,28 +356,26 @@ b => binary mode (like picture, music files)
 
 # ! Twelfth Example
 # * Json format
-import json
-
-student = {
-    'name': 'John',
-    'age': 23,
-    'department': 'Mathematics',
-    }
-
-with open('students.json',
-          'w',
-          encoding='utf-8') as file:
-    json.dump(student,
-              file,
-              indent=4)
-
-with open('students.json',
-          'r') as file:
-    data = json.load(file)
-    print(data,
-          type(data))
-    for student in data:
-        print(student['age'],
-              type(student['age']))
-
-# ! Thirteenth Example
+# import json
+#
+# student = {
+#     'name': 'John',
+#     'age': 23,
+#     'department': 'Mathematics',
+#     }
+#
+# with open('students.json',
+#           'w',
+#           encoding='utf-8') as file:
+#     json.dump(student,
+#               file,
+#               indent=4)
+#
+# with open('students.json',
+#           'r') as file:
+#     data = json.load(file)
+#     print(data,
+#           type(data))
+#     for student in data:
+#         print(student['age'],
+#               type(student['age']))
