@@ -120,37 +120,28 @@
 # ! Thirteenth Example
 # multiply = 1
 # while True:
-#     number = int(input('Enter a number: '))
+#     number = int(input("Enter a number: "))
 #     if number == 0:
 #         break
 #     else:
 #         multiply *= number
-# print('Multiply of numbers is',
-#       multiply)
+# print("Multiply of numbers is", multiply)
 
 # ! Fourteenth Example
-# for x in range(1,
-#                11):
+# for x in range(1, 11):
 #     print("#{}".format(x))
-#     for y in range(1,
-#                    11):
-#         print('\t {}*{} = {}'.format(x,
-#                                      y,
-#                                      x * y))
+#     for y in range(1, 11):
+#         print("\t {}*{} = {}".format(x, y, x * y))
 
 # ! Fifteenth Example
-# last_number = int(input('Enter last number: '))
-# for dd in range(1,
-#                 last_number + 1):
+# last_number = int(input("Enter last number: "))
+# for dd in range(1, last_number + 1):
 #     if (dd % 3 == 0) & (dd % 5 == 0):
-#         print(dd,
-#               'fiz & buzz')
+#         print(dd, "fiz & buzz")
 #     elif dd % 3 == 0:
-#         print(dd,
-#               'fiz')
+#         print(dd, "fiz")
 #     elif dd % 5 == 0:
-#         print(dd,
-#               'buzz')
+#         print(dd, "buzz")
 #     else:
 #         print(dd)
 
@@ -226,17 +217,17 @@
 #     print(f'{number} is not an Armstrong number')
 
 # * Second method (Armstrong number)
-# for number in range(1,
-#                     10000):
+# for number in range(1, 10000):
 #     string_number = str(number)
 #     power = len(string_number)
 #     sum_ = 0
+
 #     for dd in string_number:
 #         sum_ = sum_ + int(dd) ** power
 #     if sum_ == number:
-#         print(f'{number} is an Armstrong number')
+#         print(f"{number} is an Armstrong number")
 # else:
-#     print(f'{number} is not an Armstrong number')
+#     print(f"{number} is not an Armstrong number")
 
 
 # ! Nineteenth Example
@@ -262,12 +253,12 @@
 # ! Twentieth Example
 # * Write a program to reverse a sentence
 # * First Method
-# sentence = input('Enter a sentence: ')
-# reverse_sentence = ''
-# for letter in range(len(sentence) - 1,
-#                     -1,
-#                     -1):
+# sentence = input("Enter a sentence: ")
+# reverse_sentence = ""
+
+# for letter in range(len(sentence) - 1, -1, -1):
 #     reverse_sentence += sentence[letter]
+
 # print(f"Reverse version of the '{sentence}' is '{reverse_sentence}'")
 
 # * Second Method
@@ -281,8 +272,7 @@
 # * Guess the number game
 # import random
 #
-# hold_number = random.randint(1,
-#                              10)
+# hold_number = random.randint(1, 10)
 #
 # while True:
 #     number = int(input('Enter a number (1-10): '))

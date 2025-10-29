@@ -143,20 +143,17 @@
 # ! Twelfth Example
 # a, b = 9, 15
 
-# print(a,
-#       b)
+# print(a, b)
 
 # number1 = a
 # number2 = b
 
 # a = number2
 # b = number1
-# print(a,
-#       b)
+# print(a, b)
 
 # a, b = b, a # Short way
-# print(a,
-#       b)
+# print(a, b)
 
 # ! Thirteenth Example
 # a = 2
@@ -269,36 +266,25 @@
 # print(text.format(name3))
 
 # text2 = 'The first, the second and the third place winners of our competition are {}, {} and {}.'
-# print(text2.format(name1,
-#                    name2,
-#                    name3))
-# print(text2.format(name2,
-#                    name3,
-#                    name1))
+# print(text2.format(name1, name2, name3))
+# print(text2.format(name2, name3, name1))
 #
 # print(text2.count('a'))
 
 # ! Twentieth Example
-# print('Omer',
-#       'Yasin',
-#       'Gamze')  # default separator is space
-# print('Omer',
-#       'Yasin',
-#       'Gamze',
-#       sep=', ')  # separator is comma
-# print('Omer',
-#       'Yasin',
-#       'Gamze',
-#       sep=' / ')  # separator is slashed
+# print('Omer', 'Yasin', 'Gamze')  # default separator is space
+
+# print('Omer', 'Yasin', 'Gamze', sep=', ')  # separator is comma
+
+# print('Omer', 'Yasin', 'Gamze', sep=' / ')  # separator is slashed
 
 # ! Twenty-First Example
-import random
+# import random
 
-random_number = random.randint(1,
-                               10)
-number = int(input('Enter the number you guessed: '))
+# random_number = random.randint(1, 10)
+# number = int(input("Enter the number you guessed: "))
 
-if number == random_number:
-    print(f'Congratulations! \nGuessed number is {random_number} ')
-else:
-    print('You did not guess the number \ntry again')
+# if number == random_number:
+#     print(f"Congratulations! \nGuessed number is {random_number} ")
+# else:
+#     print("You did not guess the number \ntry again")

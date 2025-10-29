@@ -136,21 +136,16 @@
 
 # ! Eighth Example
 # * input() take data from user
-
-print('What is your name?')
-name = input()
-print('Nice to meet you',
-      name)
-
-print('How old are you?')
-yas = input()  # input always takes data as string
-yas = int(yas)
-print(yas * 2)
-
-name = input('Name : ')
-age = input('Age : ')
-print('Hello',
-      name,
-      'you are',
-      age,
-      'years old')
+#
+# print('What is your name?')
+# name = input()
+# print('Nice to meet you', name)
+#
+# print('How old are you?')
+# yas = input()  # input always takes data as string
+# yas = int(yas)
+# print(yas * 2)
+#
+# name = input('Name : ')
+# age = input('Age : ')
+# print('Hello', name, 'you are', age, 'years old')
