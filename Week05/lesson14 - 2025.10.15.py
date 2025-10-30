@@ -18,6 +18,7 @@ What can be done with web scraping:
 - Copy copyrighted content without permission
 - Send continuous requests that overload the server (DoS-like behavior)
 """
+
 from pyparsing import string_start
 
 # ! First Example
@@ -61,14 +62,14 @@ html_doc = """
 </html>
 """
 
-# from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup
 
-# soup = BeautifulSoup(html_doc, "html.parser")
+soup = BeautifulSoup(html_doc, "html.parser")
 
 # * Fetching data based on HTML tag name
 # print("Title of the Web Page: ", soup.title.text)  # Title of the Web Page:  Students List
 
-# print("Information of the div: ", soup.div.text)
+print("Information of the div: ", soup.div.text)
 """
 Information of the div:
 Class 10-A
