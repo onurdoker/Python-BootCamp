@@ -1,0 +1,40 @@
+<!-- ! Second Example -->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>User Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>You are in user page</h1>-->
+<!--<p>Welcome to user page</p>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!-- ! Third Example -->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>User Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>You are in user page</h1>-->
+<!--<p>Welcome to {{name}} page</p>-->
+<!--<p>Last login time: {{today}}</p>-->
+<!--<p>Extra extra </p>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--! Fourth Example-->
+{%extends 'base.html' %}
+
+<!-- ! Fifth Example -->
+{%block title %} User Page {%endblock%}
+{%block h1 %}Welcome to Python Bootcamp Course {%endblock%}
+
+{%block content %}
+{{username | title}}
+{%endblock%}
