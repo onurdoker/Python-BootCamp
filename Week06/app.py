@@ -209,47 +209,95 @@ Jinja2 template tags:
 {% ... %} for statements and variable expressions (if, for, etc.)
 {# ... #} for comments
 """
-from flask import Flask, render_template
+# from flask import Flask, render_template
+#
+# app = Flask(__name__)  # Flask application object created
+#
+#
+# @app.route("/")
+# def index():
+#     texts = [
+#         {
+#             "title": "What is Flask?",
+#             "content": "Flask is a lightweight Python web framework",
+#         },
+#         {
+#             "title": "I learn Jinja2",
+#             "content": "The template engine is very useful",
+#         },
+#         {
+#             "title": "Virtual Environment",
+#             "content": "Isolating dependencies is great",
+#         },
+#     ]
+#     return render_template("index2.html", text=texts)
+#
+#
+# @app.route("/users")
+# def users():
+#     users = [
+#         {"name": "John", "active": True},
+#         {"name": "Jack", "active": False},
+#         {"name": "Tom", "active": True},
+#     ]
+#     return render_template("users.html", users=users)
+#
+#
+# @app.route("/products")
+# def products():
+#     categories = [
+#         {"name": "Electronic", "products": ["Laptop", "Phone", "Tablet"]},
+#         {"name": "Book", "products": ["Novel", "Poetry", "History"]},
+#     ]
+#     return render_template("products.html", categories=categories)
+#
+#
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
+# ! Seventh Example
+# * ToDo Application
+# from flask import Flask, render_template
+#
+# app = Flask(__name__)  # Flask application object created
+#
+# todos = [
+#     {"id": 1, "mission": "Learn Flask", "completed": True},
+#     {"id": 2, "mission": "Study Jinja2", "completed": False},
+#     {"id": 3, "mission": "Build virtual environment", "completed": False},
+#     {"id": 4, "mission": "Make a ToDo list", "completed": True},
+# ]
+#
+#
+# @app.route("/")
+# def index():
+#     return render_template("index3.html", todos=todos)
+#
+#
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
+# ! Eighth Example
+from flask import Flask, render_template, request
 
 app = Flask(__name__)  # Flask application object created
 
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def index():
-    texts = [
-        {
-            "title": "What is Flask?",
-            "content": "Flask is a lightweight Python web framework",
-        },
-        {
-            "title": "I learn Jinja2",
-            "content": "The template engine is very useful",
-        },
-        {
-            "title": "Virtual Environment",
-            "content": "Isolating dependencies is great",
-        },
-    ]
-    return render_template("index2.html", text=texts)
-
-
-@app.route("/users")
-def users():
-    users = [
-        {"name": "John", "active": True},
-        {"name": "Jack", "active": False},
-        {"name": "Tom", "active": True},
-    ]
-    return render_template("users.html", users=users)
-
-
-@app.route("/products")
-def products():
-    categories = [
-        {"name": "Electronic", "products": ["Laptop", "Phone", "Tablet"]},
-        {"name": "Book", "products": ["Novel", "Poetry", "History"]},
-    ]
-    return render_template("products.html", categories=categories)
+    if request.method == "POST":
+        name = request.form.get("name")
+        if name:
+            return f"<h1>Hello {name} </h1><a href='/'>Go Back</a>"
+        else:
+            return "<h2>Error: The name cannot be empty</h2><a href='/'>Try again</a>"
+    return """
+    <h2>Enter your name</h2>
+    <form method="POST">
+    <input type = 'text' name = 'name' placeholder='Enter your name' required>
+    <button type = 'submit'>Submit</button>
+    </form>
+    """
 
 
 if __name__ == "__main__":
