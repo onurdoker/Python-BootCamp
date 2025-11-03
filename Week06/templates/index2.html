@@ -1,0 +1,21 @@
+{% if text %}
+<ul>
+
+    {% for line in text %}
+    <li>
+        <h3>
+            {{ line.title}}
+        </h3>
+        <p>
+            {{ line.content }}
+        </p>
+    </li>
+    {% endfor %}
+
+</ul>
+
+{% else %}
+
+There is no text
+
+{% endif %}
