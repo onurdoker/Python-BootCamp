@@ -36,7 +36,7 @@ def users():
         {"name": "Jack", "active": False},
         {"name": "Tom", "active": True},
     ]
-    return render_template("users.html", users=users)
+    return render_template("index.html", users=users)
 
 
 @app.route("/products")

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>Blog Posts</h1>
+
+{% if texts %}
+<ul>
+    {% for text in texts %}
+    <li>
+        <h3>{{ text.title }}</h3>
+        <p>{{ text.content }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No texts found</p>
+{% endif %}
+</body>
+</html>
