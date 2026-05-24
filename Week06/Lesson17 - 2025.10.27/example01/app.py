@@ -1,7 +1,7 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, redirect, render_template, url_for, request
+
 
 app = Flask(__name__)
-app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
 @app.route("/")
@@ -19,18 +19,19 @@ def user(username):
     return render_template("user.html", username=username)
 
 
+@app.route("/main")
+def main():
+    return redirect(url_for("index"))
+
+
 @app.route("/contact", methods=["POST", "GET"])
 def contact():
     if request.method == "POST":
         name = request.form["name"]
-        message = f"Thank you {name}"
+        message = f"Thank you, {name}"
         return render_template("contact.html", message=message)
+
     return render_template("contact.html")
-
-
-@app.route("/main")
-def main():
-    return redirect(url_for("index"))
 
 
 @app.errorhandler(404)
