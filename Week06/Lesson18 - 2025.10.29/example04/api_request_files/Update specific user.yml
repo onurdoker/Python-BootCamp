@@ -1,0 +1,22 @@
+info:
+  name: Update specific user
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://192.168.1.12:5001/users/2
+  body:
+    type: json
+    data: |-
+      {
+        "email": "jackblack@example.com",
+        "name": "Jack Black Tomorrow"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
