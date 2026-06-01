@@ -1,0 +1,9 @@
+name,age,salary,dept,gender
+Jack,25,50000.0,Eng,M
+Jim,30,60000.0,Sales,F
+Jimmy,35,75000.0,Eng,M
+Jill,28,55000.0,HR,F
+John,32,48000.0,Sales,F
+Janet,29,nan,Eng,M
+Jonathon,27,52000.0,HR,F
+Jayson,31,68000.0,Sales,M
