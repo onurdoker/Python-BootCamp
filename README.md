@@ -1,7 +1,7 @@
 # Python Bootcamp
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: Educational](https://img.shields.io/badge/License-Educational-yellow.svg)](https://opensource.org/licenses/Educational)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive 8-week Python bootcamp program covering programming fundamentals to advanced data science and web development. This repository contains hands-on examples, practice exercises, and project files.
 
@@ -13,77 +13,63 @@ This bootcamp is designed for learners progressing from beginner to intermediate
 Total Duration: 8 Weeks
 Target Audience: Beginners to Intermediate Learners
 Prerequisites: Basic computer literacy
+Total Examples: 218 Python files + 10 Jupyter Notebooks
 ```
 
 ## Curriculum Structure
 
-| Week | Topic | Key Technologies |
-|------|-------|-----------------|
-| **Week 01** | Python Fundamentals | Variables, Data Types, Conditionals |
-| **Week 02** | Control Flow & Functions | Loops, Functions, Error Handling |
-| **Week 03** | File Operations | File I/O, JSON, CSV Processing |
-| **Week 04** | Database Management | SQLite, SQL Queries, ORM |
-| **Week 05** | Web Scraping | Requests, BeautifulSoup, Selenium |
-| **Week 06** | Web Development | Flask, Templates, Forms |
-| **Week 07** | Data Analysis | Pandas, Matplotlib, Seaborn |
-| **Week 08** | Scientific Computing | NumPy, Advanced Visualization |
+| Week | Topic | Key Technologies | Lessons | Examples |
+|------|-------|-----------------|---------|----------|
+| **Week 01** | Python Fundamentals | Variables, Data Types, Conditionals | 3 | 59 |
+| **Week 02** | Control Flow & Functions | Loops, Functions, Error Handling | 3 | 67 |
+| **Week 03** | File Operations | File I/O, JSON, CSV Processing | 3 | 45 |
+| **Week 04** | Database Management | SQLite, SQL Queries, ORM | 3 | 52 |
+| **Week 05** | Web Scraping | Requests, BeautifulSoup, Selenium | 3 | 25 |
+| **Week 06** | Web Development | Flask, Templates, Forms | 3 | 14 |
+| **Week 07** | Data Analysis | Pandas, Matplotlib, Jupyter | 3 | 3 notebooks |
+| **Week 08** | Scientific Computing | NumPy, Seaborn, Visualization | 3 | 4 notebooks |
 
 ## Repository Structure
 
 ```
 Python-BootCamp/
-├── Week01/          # Fundamentals (3 lessons)
-├── Week02/          # Control structures (3 lessons)
-├── Week03/          # File operations & data formats
-├── Week04/          # SQLite databases
-├── Week05/          # Web scraping techniques
-├── Week06/          # Flask web applications (12 examples)
-├── Week07/          # Data visualization & analysis
-├── Week08/          # NumPy & scientific computing
+├── Week01/          # Python Fundamentals (2025.09.15 - 2025.09.20)
+│   ├── Lesson01 - 2025.09.15/  # Introduction, print(), comments
+│   ├── Lesson02 - 2025.09.17/  # Variables, type conversion, input()
+│   └── Lesson03 - 2025.09.20/  # Conditional statements
+├── Week02/          # Control Flow & Functions (2025.09.22 - 2025.09.27)
+│   ├── Lesson04 - 2025.09.22/  # Lists, loops
+│   ├── Lesson05 - 2025.09.24/  # Functions, parameters
+│   └── Lesson06 - 2025.09.27/  # Strings, exception handling
+├── Week03/          # File Operations (2025.09.29 - 2025.10.04)
+│   ├── Lesson07 - 2025.09.29/  # File I/O operations
+│   ├── Lesson08 - 2025.10.01/  # File handling continued
+│   └── Lesson09 - 2025.10.04/  # JSON and CSV processing
+├── Week04/          # Database Management (2025.10.06 - 2025.10.11)
+│   ├── Lesson10 - 2025.10.06/  # SQLite fundamentals
+│   ├── Lesson11 - 2025.10.08/  # SQL queries (SELECT, INSERT, UPDATE, DELETE)
+│   └── Lesson12 - 2025.10.11/  # Object-Relational Mapping (ORM)
+├── Week05/          # Web Scraping (2025.10.13 - 2025.10.18)
+│   ├── Lesson13 - 2025.10.13/  # HTTP requests, REST APIs
+│   ├── Lesson14 - 2025.10.15/  # BeautifulSoup data extraction
+│   └── Lesson15 - 2025.10.18/  # Selenium browser automation
+├── Week06/          # Flask Web Development (2025.10.20 - 2025.10.25)
+│   ├── Lesson16 - 2025.10.20/  # Flask routing, templates
+│   ├── Lesson17 - 2025.10.22/  # Forms, POST/GET methods
+│   └── Lesson18 - 2025.10.25/  # Database integration
+├── Week07/          # Data Analysis (2025.10.27 - 2025.10.29)
+│   ├── Lesson19 - 2025.10.27/  # Pandas data manipulation
+│   ├── Lesson20 - 2025.10.29/  # Matplotlib visualizations
+│   └── Lesson21 - 2025.11.01/  # Seaborn statistical plots
+└── Week08/          # Scientific Computing (2025.11.03 - 2025.11.08)
+    ├── Lesson22 - 2025.11.03/  # NumPy array operations
+    ├── Lesson23 - 2025.11.05/  # Advanced data visualization
+    └── Section24 - 2025.11.08/  # Comprehensive analysis project
 └── Practice/        # Weekly practice questions & notebooks
+    ├── Section05-Q1.py through Q11.py
+    ├── Section06-Q1.py, Q4.py
+    └── Section01-04.ipynb  # Interactive coding exercises
 ```
-
-### Week 01: Python Fundamentals
-- **Lesson 01** (2025-09-15): Introduction, `print()` function, comments, basic data types
-- **Lesson 02** (2025-09-17): Variables, type conversion, user input
-- **Lesson 03** (2025-09-20): Conditional statements, logical operators
-
-### Week 02: Control Flow & Functions
-- **Lesson 04** (2025-09-22): `for`/`while` loops, list operations
-- **Lesson 05** (2025-09-24): Function definitions, parameters, return values
-- **Lesson 06** (2025-09-27): String methods, exception handling
-
-### Week 03: File Operations
-- **Lesson 07** (2025-09-29): File I/O operations
-- **Lesson 08** (2025-10-01): File handling continued
-- **Lesson 09** (2025-10-04): JSON and CSV data processing
-
-### Week 04: Database Management
-- **Lesson 10** (2025-10-06): SQLite fundamentals
-- **Lesson 11** (2025-10-08): SQL queries (SELECT, INSERT, UPDATE, DELETE)
-- **Lesson 12** (2025-10-11): Object-Relational Mapping (ORM)
-
-### Week 05: Web Scraping
-- **Lesson 13** (2025-10-13): HTTP requests library
-- **Lesson 14** (2025-10-15): BeautifulSoup data extraction
-- **Lesson 15** (2025-10-18): Selenium browser automation
-
-### Week 06: Flask Web Development
-12 progressive examples covering:
-- Basic routing and template rendering
-- URL parameters and dynamic pages
-- Form handling (GET/POST)
-- Error handling and redirects
-- Database integration with SQLite
-
-### Week 07: Data Analysis & Visualization
-- Matplotlib visualizations
-- Pandas data manipulation
-- Seaborn statistical plots
-
-### Week 08: Scientific Computing
-- NumPy array operations
-- Advanced data visualization techniques
 
 ## Prerequisites
 
@@ -116,48 +102,82 @@ Recommended: Basic familiarity with command line operations
 
 ## Quick Start
 
-### Run Flask Examples (Week 06)
+### Run Python Examples
 
 ```bash
-cd Week06/Example08
-python app.py
+# Run any example file
+python Week01/Lesson01\ -\ 2025.09.15/example01.py
 ```
-
-Then open http://127.0.0.1:5000 in your browser.
-
-**Available Routes:**
-- `/` - Home page
-- `/about` - About page
-- `/user/<name>` - Dynamic user page
-- `/contact` - Contact form (GET/POST)
-- `/main` - Redirect example
 
 ### Launch Jupyter Notebooks
 
 ```bash
 jupyter notebook Practice/
 # or
-jupyter notebook Week07/Section01/lesson01.ipynb
+jupyter notebook Week07/Lesson19\ -\ 2025.10.27/lesson.ipynb
 ```
+
+## Week-by-Week Content
+
+### Week 01: Python Fundamentals
+- Basic syntax and `print()` function
+- Comments and code documentation
+- Variables, data types, and type conversion
+- User input handling
+- Conditional statements and logical operators
+
+### Week 02: Control Flow & Functions
+- Lists, tuples, and dictionaries
+- For and while loops
+- Function definitions and parameters
+- String methods and manipulation
+- Exception handling with try/except
+
+### Week 03: File Operations
+- Reading and writing files
+- File handling best practices
+- JSON data processing
+- CSV file operations
+
+### Week 04: Database Management
+- SQLite database operations
+- SQL queries (SELECT, INSERT, UPDATE, DELETE)
+- Object-Relational Mapping (ORM) concepts
+
+### Week 05: Web Scraping
+- HTTP requests and REST APIs
+- BeautifulSoup HTML parsing
+- Selenium browser automation
+
+### Week 06: Flask Web Development
+- Flask application setup
+- Route decorators and URL parameters
+- Template rendering
+- Form handling (GET/POST)
+- Database integration
+
+### Week 07: Data Analysis
+- Pandas DataFrame operations
+- Matplotlib data visualization
+- Seaborn statistical plots
+
+### Week 08: Scientific Computing
+- NumPy array operations
+- Advanced visualization techniques
+- Data analysis projects
 
 ## Practice Exercises
 
 The `Practice/` directory contains:
-- **Section 05**: Functions and string manipulation (Q1-Q11)
-- **Section 06**: Data structures and algorithms (Q1, Q4)
-- **Interactive notebooks**: Hands-on coding exercises with solutions
-
-## Learning Path Recommendations
-
-1. **Beginners**: Follow weeks sequentially, complete all exercises
-2. **Intermediate**: Focus on Weeks 04-08 for data science and web development
-3. **Developers**: Jump to Week 06 for Flask applications, Week 07-08 for data analysis
+- **Section 05**: Functions and string manipulation exercises (Q1-Q11)
+- **Section 06**: Data structures and algorithms exercises (Q1, Q4)
+- **Interactive notebooks**: Hands-on coding exercises with solutions (Section01-04)
 
 ## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| `ModuleNotFoundError` | Run `pip install -r requirements.txt` |
+| `ModuleNotFoundError` | Run `pip install flask jupyter pandas matplotlib seaborn numpy requests beautifulsoup4 selenium` |
 | Flask app not loading | Check virtual environment is activated |
 | Jupyter kernel issues | Run `python -m ipykernel install --user --name=.venv` |
 
@@ -170,7 +190,7 @@ This is an educational repository. Feel free to:
 
 ## License
 
-This project is for **educational purposes only**. Attribution is appreciated when reusing code or materials.
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
